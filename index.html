@@ -22,7 +22,9 @@
     header {
       background: #111;
       padding: 20px;
-      text-align: left;
+      display: flex; /* ADDED */
+      justify-content: space-between; /* ADDED */
+      align-items: center; /* ADDED */
       border-bottom: 2px solid #f1c40f;
     }
 
@@ -153,7 +155,6 @@
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
     <img src="ai-logo.jpg" alt="WabTech Logo">
     <nav>
@@ -163,12 +164,10 @@
     </nav>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <h1>Shaping the Future with AI Innovation</h1>
   </section>
 
-  <!-- ABOUT (added) -->
   <section class="about">
     <p>
       WabTech harnesses the power of artificial intelligence to transform businesses, agriculture, and climate solutions.
@@ -177,7 +176,6 @@
     </p>
   </section>
 
-  <!-- SOLUTIONS -->
   <section class="solutions">
     <h2>Our AI Solutions</h2>
     <div class="solution-cards">
@@ -196,7 +194,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-icons">
       <a href="mailto:wabtech@gmail.com" target="_blank" title="Email">
