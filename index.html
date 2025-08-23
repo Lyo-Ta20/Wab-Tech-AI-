@@ -3,88 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WabTech - Empowering through AI</title>
+  <title>WabTech - AI Solutions</title>
   <style>
-    body {
+    /* RESET */
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, sans-serif;
-      background-color: black;
-      color: #B8860B; /* Changed color */
     }
 
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* HEADER */
     header {
-      background: #000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 40px;
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #f1c40f;
     }
 
     header img {
-      height: 50px;
+      height: 60px;
     }
 
-    nav a {
-      margin-left: 25px;
-      text-decoration: none;
-      color: #B8860B; /* Changed color */
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: white;
-    }
-
-    /* HERO SECTION with ai-background.jpg */
+    /* HERO */
     .hero {
+      height: 80vh;
       background: url('ai-background.jpg') no-repeat center center/cover;
-      height: 70vh;   /* Adjust height here */
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
+      color: #fff;
     }
 
     .hero h1 {
-      font-size: 60px;
-      color: #B8860B; /* Changed color */
+      font-size: 2.8rem;
       background: rgba(0, 0, 0, 0.6);
-      padding: 20px 40px;
+      padding: 15px 25px;
       border-radius: 10px;
+      color: #f1c40f;
     }
 
-    .about {
-      text-align: center;
+    /* SOLUTIONS SECTION */
+    .solutions {
       padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-      font-size: 20px;
-      line-height: 1.6;
+      text-align: center;
+      background: #111;
+    }
+
+    .solutions h2 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      color: #f1c40f;
+    }
+
+    .solution-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .card {
+      background: #222;
+      padding: 25px;
+      width: 280px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(241, 196, 15, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(241, 196, 15, 0.8);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #f1c40f;
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #ddd;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #000;
+      color: #f1c40f;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .footer-icons {
+      margin-bottom: 15px;
+    }
+
+    .footer-icons a {
+      display: inline-block;
+      margin: 0 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .footer-icons a:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 15px rgba(241,196,15,0.8);
+      border-radius: 50%;
+    }
+
+    .footer-icons img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
     }
   </style>
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
     <img src="ai-logo.jpg" alt="WabTech Logo">
-    
-    <nav>
-      <a href="#">HOME</a>
-      <a href="#">BLOGS</a>
-      <a href="#">CONTACT</a>
-    </nav>
   </header>
 
+  <!-- HERO -->
   <section class="hero">
-    <h1>Empowering through AI</h1>
+    <h1>Shaping the Future with AI Innovation</h1>
   </section>
 
-  <section class="about">
-    <p>
-      WabTech harnesses the power of artificial intelligence to transform businesses, agriculture, and climate solutions. 
-      We build smart AI products that solve real-world problems, drive efficiency, and create measurable impact across industries. 
-      From predictive analytics to intelligent automation, WabTech brings innovation to life, making AI accessible, practical, and powerful.
-    </p>
+  <!-- SOLUTIONS -->
+  <section class="solutions">
+    <h2>Our AI Solutions</h2>
+    <div class="solution-cards">
+      <div class="card">
+        <h3>AI in Business</h3>
+        <p>Optimize operations, boost productivity, and unlock insights that drive growth.</p>
+      </div>
+      <div class="card">
+        <h3>AI in Agriculture</h3>
+        <p>From smart farming to precision agriculture, we use AI to improve yields sustainably.</p>
+      </div>
+      <div class="card">
+        <h3>AI & Climate Impact</h3>
+        <p>We harness AI to track climate patterns and build solutions for a greener planet.</p>
+      </div>
+    </div>
   </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-icons">
+      <a href="mailto:wabtech@gmail.com" target="_blank" title="Email">
+        <img src="email-icon.png" alt="Email">
+      </a>
+      <a href="tel:+254700000000" target="_blank" title="Call">
+        <img src="phone-icon.png" alt="Phone">
+      </a>
+      <a href="https://wa.me/254700000000" target="_blank" title="WhatsApp">
+        <img src="whatsapp-icon.png" alt="WhatsApp">
+      </a>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">
+        <img src="linkedin-icon.png" alt="LinkedIn">
+      </a>
+    </div>
+    <p>© 2025 WabTech. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
