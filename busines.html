@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wabtech AI | Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a0a0a;
+      color: #f5f5f5;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid gold;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      color: gold;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: gold;
+    }
+
+    .cta-button {
+      background-color: gold;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #ffd700;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+      background: linear-gradient(to bottom, #0a0a0a, #111);
+    }
+
+    .hero h2 {
+      color: gold;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      color: #ccc;
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      border-top: 1px solid #333;
+    }
+
+    .section h3 {
+      color: gold;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      justify-items: center;
+    }
+
+    iframe {
+      border: 2px solid gold;
+      border-radius: 10px;
+      width: 100%;
+      height: 200px;
+    }
+
+    footer {
+      background-color: #000;
+      color: #888;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 1px solid gold;
+    }
+
+    @media (min-width: 768px) {
+      iframe {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Wabtech AI</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Live Demos</a></li>
+      <li><a href="#">Industries</a></li>
+      <li><a href="#">Blog / Learn</a></li>
+      <li><a href="#">Partnerships</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <button class="cta-button">Start Building</button>
+  </nav>
+
+  <section class="hero">
+    <h2>We Build the Tools. You Build the Future.</h2>
+    <p>Modular AI tools for every business—from farms to fintech. Built for Africa. Built for impact.</p>
+    <div class="buttons">
+      <button class="cta-button">Explore Demos</button>
+      <button class="cta-button">Partner with Us</button>
+      <button class="cta-button">Start Building</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Demo Previews</h3>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/mnUHSIsNKv0" title="Wabtec Ai tests" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/cUwWzyBsxP0" title="Wabtec Fuel Application powered by EdgeLINC™" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/QADDMfrWi68" title="Wabtec Digital Intelligence - PTC 2 0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/3fuyKV5IoRM" title="Wabtec advanced technology team shows potential new ..." allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/hwzOY09KIoU" title="DEMO: Industry first Telco-grade generative AI for intent ..." allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/-e9pz1fwdJk" title="Wabtec Digital IntelligenceKinetiX Inspection Technologies" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Wabtech AI. Built by Masai with vision, code, and gold.
+  </footer>
+
+</body>
+</html>
